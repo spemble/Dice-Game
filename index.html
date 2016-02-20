@@ -4,7 +4,7 @@
 <body>
 
 <!-- ensure valid HTML with data-ng- directives -->
-<div data-ng-app="sampleApp" data-ng-controller="sampleController">
+<div data-ng-app="sampleApp" data-ng-controller="sampleCtrl">
 Email: <input type="text" data-ng-model="email"><br>
 Password: <input type="password" data-ng-model="password"><br>
 <br>
@@ -17,10 +17,7 @@ Login: {{email + "/" + password}}
 var app = angular.module('sampleApp', []);
 
 // create the controller 
-app.controller('sampleController', function($scope) {
-    $scope.email = "John@aol.com";
-    $scope.password = "12345";
-});
+<script src="sampleController.js"></script>
 </script>
 
 </body>
